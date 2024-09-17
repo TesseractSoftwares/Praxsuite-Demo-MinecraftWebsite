@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color1:#A74FFF;
+    --color2:#5F00BF;
+    --color3:#27273A;
+    --color4:#1B1B28;
+    --color5:#0F0F15;
+    --color6:#0A0A0A;
+}
+
+body {
+    background-color: var(--color6);
+}
+
+nav {
+    background-color: #00000059;
+    padding: 1rem;
+}
+
+.home-hero-bg {
+    background-image: linear-gradient(#00000000, #0a0a0a8a, #0A0A0A), url(../img/hero.bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-logo {
+    width: 15%;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #5F00BF, #A74FFF);
+    border-radius: .4rem;
+}
+
+.btn-transparent {
+    background: transparent;
+    border-radius: .4rem;
+}
+
+.btn-transparent:hover {
+    background-color: var(--color3);
+    border: solid 1px var(--color3);
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, #5200a3, #8940d2);
+}
+
+.h-100vh { height: 100vh; }
