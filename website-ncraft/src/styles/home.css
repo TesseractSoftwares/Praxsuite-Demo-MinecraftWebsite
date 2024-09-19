@@ -1,0 +1,49 @@
+.home-hero-bg {
+    background-image: linear-gradient(#00000000, #0a0a0a8a, #0A0A0A), url(../img/hero.bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-carousel {
+    width: 65%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .w-carousel, .w-50 {
+        width: 100%;
+    }
+
+    .instruccion-content {
+        flex-direction: column;
+    }
+}
+
+button.group {
+    outline: none;
+}
+
+button.group span {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.group:focus .group-focus\:ring-white {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(0 0 0 0 / var(--tw-ring-opacity)) /* #ffffff */;
+}
+
+.instruccion-content {
+    display: flex;
+    gap: 2rem;
+}

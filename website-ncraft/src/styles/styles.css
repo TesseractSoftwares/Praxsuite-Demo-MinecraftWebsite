@@ -15,6 +15,7 @@
     --color4:#1B1B28;
     --color5:#0F0F15;
     --color6:#0A0A0A;
+    --color7:#5765F2;
 }
 
 body {
@@ -22,15 +23,9 @@ body {
 }
 
 nav {
-    background-color: #00000059;
+    background-color: #0000006e;
     padding: 1rem;
-}
-
-.home-hero-bg {
-    background-image: linear-gradient(#00000000, #0a0a0a8a, #0A0A0A), url(../img/hero.bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
 }
 
 .nav-logo {
@@ -39,21 +34,32 @@ nav {
 
 .btn-gradient {
     background: linear-gradient(to right, #5F00BF, #A74FFF);
-    border-radius: .4rem;
+    border-radius: .3rem;
 }
 
 .btn-transparent {
-    background: transparent;
-    border-radius: .4rem;
+    background-color: var(--color3);
+    border: solid 1px var(--color3);
+    border-radius: .3rem;
 }
 
 .btn-transparent:hover {
-    background-color: var(--color3);
-    border: solid 1px var(--color3);
+    background-color: #242436;
+    border: solid 1px #242436;
 }
 
 .btn-gradient:hover {
     background: linear-gradient(to right, #5200a3, #8940d2);
+}
+
+.btn-discord {
+    background-color: var(--color7);
+    border-radius: .3rem;
+}
+
+.btn-discord:hover {
+    background-color: #454fc1;
+    border-radius: .3rem;
 }
 
 .h-100vh { height: 100vh; }
