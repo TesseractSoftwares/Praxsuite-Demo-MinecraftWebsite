@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../../../img/NexusCraftLogo.png';
+import { HrefGradient } from '../../../components/buttons/hrefgradient';
 
 export const RegisterForm=()=>{
     const [formData, setFormData] = useState({
@@ -150,7 +151,7 @@ export const RegisterForm=()=>{
                             {errors.password && <p className="text-red-500 text-xs">{errors.password}</p>}
                         </div>
 
-                        <div className="mb-4">
+                        <div className="mb-5">
                             <label className="block text-sm font-medium text-white">Confirmar Contraseña</label>
                             <input
                                 type="password"
@@ -163,10 +164,8 @@ export const RegisterForm=()=>{
                         </div>
                         
                         <div className='flex flex-col justify-center items-center'>
-                            <button type="submit" className="h-11 mb-3 btn-gradient w-64 text-white">
-                            Registrarse
-                            </button>
-                            <p class="h-9 text-sm text-white">¿Ya tienes una cuenta? <span className='h-9 text-sm text-blue-400'>Iniciar sesión</span></p>
+                            <HrefGradient href={'...'} btnlabel={'Registrarse'} />
+                            <p class="h-9 text-sm text-white mt-5">¿Ya tienes una cuenta? <span className='h-9 text-sm text-blue-400'>Iniciar sesión</span></p>
                         </div>
                         
                     </form>

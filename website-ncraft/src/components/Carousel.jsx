@@ -1,4 +1,5 @@
-import { Carousel } from "flowbite-react";
+import { Carousel } from 'flowbite-react';
+import imgn from '../img/hero.bg.png';
 
 export const CarouselComponent = () => {
     const slides = [
@@ -6,19 +7,19 @@ export const CarouselComponent = () => {
             title: "Mascotas y Accesorios",
             description: "Equipate con los mejores accesorios de NexusCraft",
             buttonLabel: "¡Jugar ahora!",
-            imageUrl: "https://hypixel.net/attachments/2021-09-19_12-58-04-png.2747218/"
+            imageUrl: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/4207b3d4-2719-4a65-9833-053069c02c20/Spark_Pets_Lite_screenshot_4.jpg"
         },
         {
             title: "Minijuego Pintadillas",
             description: "Escondete del Cazador o atrapa a los jugadores Escondidos",
             buttonLabel: "¡Jugar ahora!",
-            imageUrl: "https://z-p3-scontent.fiqq3-1.fna.fbcdn.net/v/t39.30808-6/416376734_18010748675485088_1270128933101542313_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AKl9IXESjZQQ7kNvgFm78jQ&_nc_zt=23&_nc_ht=z-p3-scontent.fiqq3-1.fna&_nc_gid=ANTiS-b-OuM3wSBfEf-Jd3_&oh=00_AYBABqJPKHqGaFMNe_kS_lJK1t7XHc_M2h9yoRTFHWyEiw&oe=66F1A58E" 
+            imageUrl: "https://preview.redd.it/to6wq2w4k5h91.png?width=1680&format=png&auto=webp&s=d77dfa8286a5a6bf9caa9251e00e39d7d164cc64" 
         },
         {
-            title: "Slide 3",
-            description: "Descripción del slide 3.",
+            title: "NexusCraft",
+            description: "Proximamente disponible",
             buttonLabel: "¡Jugar ahora!",
-            imageUrl: "https://w.wallhaven.cc/full/1p/wallhaven-1p398w.jpg"
+            imageUrl: imgn
         }
     ];
   

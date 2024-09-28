@@ -1,11 +1,9 @@
 import { HomePage } from "./pages/homePage/home";
-import { RegisterPage } from "./pages/registerPage/register";
-import { LoginForm } from "./pages/loginPage/loginComponents/loginContent";
-import { Suport } from "./pages/suportPage/suportComponents/suportContent";
+// import { LoginPage } from "./pages/loginPage/login";
+// import { RegisterPage } from "./pages/registerPage/register";
 
 export const App = () => {
     return (
-        <Suport />
-        
+        <HomePage />
     );
 }

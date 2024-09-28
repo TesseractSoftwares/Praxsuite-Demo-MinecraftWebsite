@@ -38,14 +38,16 @@ nav {
 }
 
 .btn-transparent {
-    background-color: var(--color3);
-    border: solid 1px var(--color3);
+    background-color: transparent;
+    border: solid 1px #d0d0d0;
+    color: #d0d0d0;
     border-radius: .3rem;
 }
 
 .btn-transparent:hover {
-    background-color: #242436;
-    border: solid 1px #242436;
+    background-color: transparent;
+    color: #ffffff;
+    border: solid 1px #ffffff;
 }
 
 .btn-gradient:hover {
@@ -63,3 +65,7 @@ nav {
 }
 
 .h-100vh { height: 100vh; }
+
+.footer-link {
+    color: #7776A8;
+}
