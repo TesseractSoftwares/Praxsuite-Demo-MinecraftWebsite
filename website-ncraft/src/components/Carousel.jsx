@@ -1,4 +1,4 @@
-import { Carousel } from 'flowbite-react';
+import { Carousel } from "flowbite-react";
 
 export const CarouselComponent = () => {
     const slides = [
