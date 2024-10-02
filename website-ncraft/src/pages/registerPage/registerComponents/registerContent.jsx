@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Logo from '../../../img/NexusCraftLogo.png';
-import { HrefGradient } from '../../../components/buttons/hrefgradient';
 
 export const RegisterForm=()=>{
     const [formData, setFormData] = useState({
@@ -90,7 +89,7 @@ export const RegisterForm=()=>{
             <section>
                 <div className="w-full flex flex-col items-center justify-center mx-auto rounded-lg shadow-md">
                     <img src={Logo} className='h-40' alt="NexusCraft" />
-                    <form onSubmit={handleSubmit} className='w-80'>
+                    <form onSubmit={handleSubmit} className='md:w-96 w-80'>
                         <div className="mb-4">
                             <label className="block text-sm font-medium text-white">Nombre</label>
                             <input
@@ -100,7 +99,7 @@ export const RegisterForm=()=>{
                                 onChange={handleChange}
                                 className={`mt-1 focus:border-color1 block w-full p-2 border ${errors.name ? 'border-red-500' : 'border-gray-300'} rounded-md`}
                             />
-                            {errors.name && <p className="text-red-500 text-xs">{errors.name}</p>}
+                            {errors.name && <p className="text-red-500 text-xs mt-2">{errors.name}</p>}
                         </div>
 
                         <div className="mb-4">
@@ -112,7 +111,7 @@ export const RegisterForm=()=>{
                                 onChange={handleChange}
                                 className={`mt-1 focus:border-color1 block w-full p-2 border ${errors.email ? 'border-red-500' : 'border-gray-300'} rounded-md`}
                             />
-                            {errors.email && <p className="text-red-500 text-xs">{errors.email}</p>}
+                            {errors.email && <p className="text-red-500 text-xs mt-2">{errors.email}</p>}
                         </div>
 
                         <div className="mb-4">
@@ -124,7 +123,7 @@ export const RegisterForm=()=>{
                                 onChange={handleChange}
                                 className={`mt-1 focus:border-color1 block w-full p-2 border ${errors.player ? 'border-red-500' : 'border-gray-300'} rounded-md`}
                             />
-                            {errors.player && <p className="text-red-500 text-xs">{errors.player}</p>}
+                            {errors.player && <p className="text-red-500 text-xs mt-2">{errors.player}</p>}
                         </div>
 
                         <div className="mb-4">
@@ -136,7 +135,7 @@ export const RegisterForm=()=>{
                                 onChange={handleChange}
                                 className={`mt-1 focus:border-color1 block w-full p-2 border ${errors.birthDate ? 'border-red-500' : 'border-gray-300'} rounded-md`}
                             />
-                            {errors.birthDate && <p className="text-red-500 text-xs">{errors.birthDate}</p>}
+                            {errors.birthDate && <p className="text-red-500 text-xs mt-2">{errors.birthDate}</p>}
                         </div>
 
                         <div className="mb-4">
@@ -148,7 +147,7 @@ export const RegisterForm=()=>{
                                 onChange={handleChange}
                                 className={`mt-1 focus:border-color1 block w-full p-2 border ${errors.password ? 'border-red-500' : 'border-gray-300'} rounded-md`}
                             />
-                            {errors.password && <p className="text-red-500 text-xs">{errors.password}</p>}
+                            {errors.password && <p className="text-red-500 text-xs mt-2">{errors.password}</p>}
                         </div>
 
                         <div className="mb-5">
@@ -160,12 +159,12 @@ export const RegisterForm=()=>{
                                 onChange={handleChange}
                                 className={`mt-1 focus:border-color1 block w-full p-2 border ${errors.confirmPassword ? 'border-red-500' : 'border-gray-300'} rounded-md`}
                             />
-                            {errors.confirmPassword && <p className="text-red-500 text-xs">{errors.confirmPassword}</p>}
+                            {errors.confirmPassword && <p className="text-red-500 text-xs mt-2">{errors.confirmPassword}</p>}
                         </div>
                         
                         <div className='flex flex-col justify-center items-center'>
-                            <HrefGradient href={'...'} btnlabel={'Registrarse'} />
-                            <p class="h-9 text-sm text-white mt-5">¿Ya tienes una cuenta? <span className='h-9 text-sm text-blue-400'>Iniciar sesión</span></p>
+                        <button type='submit' className='btn-gradient inline-flex justify-center items-center py-3 px-5 text-base text-center w-full md:w-72 text-white rounded-lg'>Registrarse</button>
+                            <p class="h-9 text-sm text-white mt-5">¿Ya tienes una cuenta? <a href='/login' className='h-9 text-sm text-blue-500'>Iniciar sesión</a></p>
                         </div>
                         
                     </form>

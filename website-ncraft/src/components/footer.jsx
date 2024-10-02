@@ -8,12 +8,12 @@ export const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl p-6 py-6 lg:py-12">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <a href="https://flowbite.com/" className="flex items-center">
+                        <a href="/" className="flex items-center">
                             <img src={Logo} className="h-20 me-3" alt="" />
                         </a>
                         <p className='md:w-96 font-thin mt-5'>Divierte con tus amigos jugando en NexusCraft, consigue grandes recompensas  como cosmeticos y mascotas compitiendo con la comunidad.</p>
                         <div className="d-btn my-5 mb-10">
-                            <HrefDiscord href={'...'} btnlabel={'Unirse al servidor'}/>
+                            <HrefDiscord btnlabel={'Unirse al servidor'}/>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -21,13 +21,13 @@ export const Footer = () => {
                             <h2 className="mb-5 text-base font-semibold text-white dark:text-white">Acceso rápido</h2>
                             <ul className="text-color3">
                                 <li className="mb-4 footer-link">
-                                    <a href="..." className="hover:underline">Hogar</a>
+                                    <a href="/" className="hover:underline">Hogar</a>
                                 </li>
                                 <li className="mb-4 footer-link">
-                                    <a href="..." className="hover:underline">Nosotros</a>
+                                    <a href="/" className="hover:underline">Nosotros</a>
                                 </li>
                                 <li className="mb-4 footer-link">
-                                    <a href="..." className="hover:underline">Soporte</a>
+                                    <a href="/support" className="hover:underline">Soporte</a>
                                 </li>
                             </ul>
                         </div>
@@ -35,7 +35,7 @@ export const Footer = () => {
                             <h2 className="mb-8 text-base font-semibold text-white dark:text-white">¿No tienes una cuenta?</h2>
                             <ul className="text-white">                               
                                 <li className="mb-4">
-                                    <HreRegister href={'...'} btnlabel={'¡Registraste ahora!'}/>
+                                    <HreRegister btnlabel={'¡Registraste ahora!'}/>
                                 </li>
                             </ul>
                         </div>

@@ -8,10 +8,12 @@ export const SupportContent= ()=>{
             <div className='flex flex-col p-5 md:flex-row items-center justify-center h-100vh md:gap-20'>
                 <div className='mb-10'>
                     <div className='h-full'>
-                        <img src={Logo} className='h-16 mb-10' alt="NexusCraft" />
+                        <a href="/" className="flex items-center">
+                            <img src={Logo} className="h-16 mb-10" alt="NexusCraft" />
+                        </a>
                         <p className='text-color1 h-12'>Contactanos</p>
                         <p className='text-white mb-10 text-3xl md:text-5xl md:max-w-2xl font-bold'>Unete a nuestro servidor de <span className='text-color1'>Discord</span> para ayudarte a resolver tus dudas</p>
-                        <HrefDiscord href={'...'} btnlabel={'Unirse al servidor'}/>
+                        <HrefDiscord btnlabel={'Unirse al servidor'}/>
                     </div>
                 </div>
                 

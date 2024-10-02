@@ -17,7 +17,7 @@ export const Leaderboard = () => {
     const sortedData = [...data].sort((a, b) => b.victories - a.victories).slice(0, 10); // Mostrando los Top 5
     
     return (
-        <section className="mt-18 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <div className="mt-18 flex flex-col items-center justify-center py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <WebTitlesComponent 
                 smalltitle={'- Tabla de clasificación -'} 
                 title={'¡Destaca entre la comunidad consiguiendo cantidades de victorias!'}
@@ -65,7 +65,7 @@ export const Leaderboard = () => {
                     </tbody>
                 </table>
             </div>
-        </section>
+        </div>
 
     );
 }

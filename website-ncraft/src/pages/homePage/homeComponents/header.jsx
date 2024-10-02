@@ -16,8 +16,8 @@ export const Header = () => {
                         </p>
                         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <HrefGradient href={'...'} btnlabel={'¡Jugar ahora!'}/>
-                                <HreRegister href={'...'}  btnlabel={'¡Registraste ahora!'} />  
+                                <HrefGradient href={'/'} btnlabel={'¡Jugar ahora!'}/>
+                                <HreRegister btnlabel={'¡Registraste ahora!'} />  
                             </div>
                         </div>
                     </div>

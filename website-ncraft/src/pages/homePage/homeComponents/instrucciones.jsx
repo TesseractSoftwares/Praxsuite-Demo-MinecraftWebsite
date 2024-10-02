@@ -11,7 +11,7 @@ import Step3Icon from '../../../img/icons/Minecraft Pickaxe.png'
 export const Instrucciones = () => {
     return (
         
-        <section className="mt-18 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <div className="mt-18 flex flex-col items-center justify-center py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <WebTitlesComponent 
                 smalltitle={'- Instrucciones de ingreso -'} 
                 title={'¿Como puedo unirte a la comunidad y jugar el minijuego?'}
@@ -21,7 +21,7 @@ export const Instrucciones = () => {
                     icon={Step1Icon} 
                     step={'PASO 1:'} 
                     title={'Registrate en nuestra página web'} 
-                    tbutton={<HrefGradient href={'...'} btnlabel={'¡Registrate ahora!'}/>}
+                    tbutton={<HrefGradient href={'/register'} btnlabel={'¡Registrate ahora!'}/>}
                     bg={'bg-color5'}
                 />
                 <InstrucctionCard 
@@ -30,7 +30,7 @@ export const Instrucciones = () => {
                     title={'Unete a la comunidad de NexusCraft'} 
                     href={'...'}
                     btnlabel={'Unirse al servidor'}
-                    tbutton={<HrefDiscord href={'...'} btnlabel={'Unirse al servidor'}/>}
+                    tbutton={<HrefDiscord btnlabel={'Unirse al servidor'}/>}
                     bg={'bg-color4'}
                 />
                 <InstrucctionCard 
@@ -41,6 +41,6 @@ export const Instrucciones = () => {
                     bg={'bg-color5'}
                 />
             </div>
-        </section>
+        </div>
     );
 }

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Logo from '../../../img/NexusCraftLogo.png';
-import { HrefGradient } from '../../../components/buttons/hrefgradient';
 
 export const LoginForm=()=>{
     const [formData, setFormData] = useState({
@@ -64,9 +63,9 @@ export const LoginForm=()=>{
     return(
         <header className="register-hero-bg h-100vh">
             <section>
-                <div className="w-full flex flex-col items-center justify-center mx-auto rounded-lg shadow-md">
-                    <img src={Logo} className='h-44' alt="NexusCraft" />
-                    <form onSubmit={handleSubmit} className='w-80'>
+                <div className="w-full flex flex-col items-center justify-center mx-auto rounded-lg">
+                    <img src={Logo} className='h-44 mb-2' alt="NexusCraft" />
+                    <form onSubmit={handleSubmit} className='md:w-96 w-80'>
 
                         <div className="mb-4">
                             <label className="block text-sm font-medium text-white">Correo Electrónico</label>
@@ -77,7 +76,7 @@ export const LoginForm=()=>{
                                 onChange={handleChange}
                                 className={`mt-1 focus:border-color1 block w-full p-2 border ${errors.email ? 'border-red-500' : 'border-gray-300'} rounded-md`}
                             />
-                            {errors.email && <p className="text-red-500 text-xs">{errors.email}</p>}
+                            {errors.email && <p className="text-red-500 text-xs mt-2">{errors.email}</p>}
                         </div>
 
                         <div className="mb-4">
@@ -89,7 +88,7 @@ export const LoginForm=()=>{
                                 onChange={handleChange}
                                 className={`mt-1 focus:border-color1 block w-full p-2 border ${errors.password ? 'border-red-500' : 'border-gray-300'} rounded-md`}
                             />
-                            {errors.password && <p className="text-red-500 text-xs">{errors.password}</p>}
+                            {errors.password && <p className="text-red-500 text-xs mt-2">{errors.password}</p>}
                         </div>
                         
                         <div className="mb-4 flex items-center">
@@ -104,8 +103,8 @@ export const LoginForm=()=>{
                         </div>
 
                         <div className='flex flex-col justify-center items-center'>
-                            <HrefGradient href={'...'} btnlabel={'Iniciar sesión'}/>
-                            <p class="h-9 text-sm mt-5 text-white">¿No tiene una cuenta? <span className='h-9 text-sm text-blue-400'>Regístrate aquí</span></p>
+                            <button type='submit' className='btn-gradient inline-flex justify-center items-center py-3 px-5 text-base text-center w-full md:w-72 text-white rounded-lg'>Iniciar sesión</button>
+                            <p class="h-9 text-sm mt-5 text-white">¿No tiene una cuenta? <a href='/register' className='h-9 text-sm text-blue-500'>Regístrate aquí</a></p>
                         </div>
                         
                     </form>

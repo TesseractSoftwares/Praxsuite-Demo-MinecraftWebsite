@@ -31,9 +31,9 @@ export const CarouselComponent = () => {
                 <div className="flex flex-col items-center justify-center h-96 absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-color5 to-transparent">
                     <h2 className="text-3xl font-bold text-white">{slide.title}</h2>
                     <p className="mt-2 text-center text-white">{slide.description}</p>
-                    <button className="btn-gradient mt-6 px-4 py-2 group-focus:ring-white text-white rounded-sm">
+                    <a href='/' className="btn-gradient mt-6 px-5 py-2 text-white rounded-sm">
                         {slide.buttonLabel}
-                    </button>
+                    </a>
                 </div>
             </div>
         ))}
