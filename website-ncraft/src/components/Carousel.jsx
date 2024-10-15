@@ -6,19 +6,19 @@ export const CarouselComponent = () => {
         {
             title: "Mascotas y Accesorios",
             description: "Equipate con los mejores accesorios de NexusCraft",
-            buttonLabel: "¡Jugar ahora!",
+            buttonLabel: "Próximamente", // ¡Jugar ahora!
             imageUrl: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/4207b3d4-2719-4a65-9833-053069c02c20/Spark_Pets_Lite_screenshot_4.jpg"
         },
         {
             title: "Minijuego Pintadillas",
             description: "Escondete del Cazador o atrapa a los jugadores Escondidos",
-            buttonLabel: "¡Jugar ahora!",
+            buttonLabel: "Próximamente",
             imageUrl: "https://preview.redd.it/to6wq2w4k5h91.png?width=1680&format=png&auto=webp&s=d77dfa8286a5a6bf9caa9251e00e39d7d164cc64" 
         },
         {
             title: "NexusCraft",
-            description: "Proximamente disponible",
-            buttonLabel: "¡Jugar ahora!",
+            description: "Próximamente disponible",
+            buttonLabel: "Próximamente",
             imageUrl: imgn
         }
     ];

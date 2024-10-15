@@ -1,7 +1,7 @@
 
 
 export const BtnServerIp = () => {
-    const textToCopy = "mc.nexuscraft.net";
+    const textToCopy = "Próximamente"; // IP servidor
 
     const handleCopy = () => {
         navigator.clipboard.writeText(textToCopy)

@@ -11,9 +11,9 @@ export const Footer = () => {
                         <a href="/" className="flex items-center">
                             <img src={Logo} className="h-20 me-3" alt="" />
                         </a>
-                        <p className='md:w-96 font-thin mt-5'>Divierte con tus amigos jugando en NexusCraft, consigue grandes recompensas  como cosmeticos y mascotas compitiendo con la comunidad.</p>
+                        <p className='md:w-96 font-thin mt-5'>Divierte con tus amigos jugando en NexusCraft, compite con la comunidad y consigue grandes recompensas como cosmeticos, mascotas y mucho más. </p>
                         <div className="d-btn my-5 mb-10">
-                            <HrefDiscord btnlabel={'Unirse al servidor'}/>
+                            <HrefDiscord btnlabel={'Próximamente'}/>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -27,7 +27,7 @@ export const Footer = () => {
                                     <a href="/" className="hover:underline">Nosotros</a>
                                 </li>
                                 <li className="mb-4 footer-link">
-                                    <a href="/support" className="hover:underline">Soporte</a>
+                                    <a href="/" className="hover:underline">Soporte</a>
                                 </li>
                             </ul>
                         </div>
@@ -35,7 +35,7 @@ export const Footer = () => {
                             <h2 className="mb-8 text-base font-semibold text-white dark:text-white">¿No tienes una cuenta?</h2>
                             <ul className="text-white">                               
                                 <li className="mb-4">
-                                    <HreRegister btnlabel={'¡Registraste ahora!'}/>
+                                    <HreRegister btnlabel={'Próximamente!'}/>
                                 </li>
                             </ul>
                         </div>

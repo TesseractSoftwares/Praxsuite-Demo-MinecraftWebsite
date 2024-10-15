@@ -2,6 +2,7 @@ import { HomePage } from "./pages/homePage/home";
 import { LoginPage } from "./pages/loginPage/login";
 import { RegisterPage } from "./pages/registerPage/register";
 import { SupportPage } from "./pages/supportPage/support";
+// AboutusPage
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

@@ -21,7 +21,7 @@ export const Instrucciones = () => {
                     icon={Step1Icon} 
                     step={'PASO 1:'} 
                     title={'Registrate en nuestra página web'} 
-                    tbutton={<HrefGradient href={'/register'} btnlabel={'¡Registrate ahora!'}/>}
+                    tbutton={<HrefGradient href={'/'} btnlabel={'Próximamente'}/>}
                     bg={'bg-color5'}
                 />
                 <InstrucctionCard 
@@ -30,7 +30,7 @@ export const Instrucciones = () => {
                     title={'Unete a la comunidad de NexusCraft'} 
                     href={'...'}
                     btnlabel={'Unirse al servidor'}
-                    tbutton={<HrefDiscord btnlabel={'Unirse al servidor'}/>}
+                    tbutton={<HrefDiscord btnlabel={'Próximamente'}/>}
                     bg={'bg-color4'}
                 />
                 <InstrucctionCard 
