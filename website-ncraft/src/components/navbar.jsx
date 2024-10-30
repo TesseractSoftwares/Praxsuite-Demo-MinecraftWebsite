@@ -16,7 +16,7 @@ export const NavbarWeb = () => {
                     <img src={Logo} className="h-14" alt="NexusCraft" />
                 </a>
                 <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <a href='/' type="button" className="text-white btn-gradient font-medium rounded-lg text-sm px-4 py-3 text-center flex items-center">Próximamente</a>
+                    <a href='/login' type="button" className="text-white btn-gradient font-medium rounded-lg text-sm px-4 py-3 text-center flex items-center">Próximamente</a>
                     <button onClick={toggleMenu} data-collapse-toggle="navbar-cta" id='triggerEl' type="button" className="focus:ring-2 focus:ring-gray-20 focus:ring-gray-800 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none" aria-controls="navbar-cta" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
                         <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -30,10 +30,10 @@ export const NavbarWeb = () => {
                             <a href="/" className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent md:hover:text-color1" aria-current="page">Hogar</a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 md:p-0 text-white rounded md:hover:bg-transparent md:hover:text-color1 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Nosotros</a>
+                            <a href="/soon" className="block py-2 px-3 md:p-0 text-white rounded md:hover:bg-transparent md:hover:text-color1 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Nosotros</a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 md:p-0 text-white rounded md:hover:bg-transparent md:hover:text-color1 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Soporte</a>
+                            <a href="/soon" className="block py-2 px-3 md:p-0 text-white rounded md:hover:bg-transparent md:hover:text-color1 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Soporte</a>
                         </li>
                     </ul>
                 </div>

@@ -1,20 +1,29 @@
-import { HomePage } from "./pages/homePage/home";
-import { LoginPage } from "./pages/loginPage/login";
-import { RegisterPage } from "./pages/registerPage/register";
-import { SupportPage } from "./pages/supportPage/support";
-// AboutusPage
+// import { HomePage } from "./pages/homePage/home";
+// import { SupportPage } from "./pages/supportPage/support";
+// // import { LoginPage } from "./pages/loginPage/login";
+// // import { RegisterPage } from "./pages/registerPage/register";
+// // AboutusPage
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import {createBrowserRouter, RouterProvider } from "react-router-dom";
+// import { ErrorPage } from "./pages/404Page/errorpage";
+// import React from "react";
 
-export const App = () => {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<HomePage />}></Route>
-                <Route path="/login" element={<LoginPage />}></Route>
-                <Route path="/register" element={<RegisterPage />}></Route>
-                <Route path="/support" element={<SupportPage />}></Route>
-            </Routes>
-        </Router>
-    );
-}
+// const Router = createBrowserRouter([
+//     {
+//         path: '/',
+//         element: <HomePage />,
+//         errorElement: <ErrorPage />,
+//     },
+//     {
+//         path: '/support',
+//         element: <SupportPage />,
+//     },
+// ]);
+
+// export const App = () => {
+//     return (
+//         <React.StrictMode>
+//             <RouterProvider router={Router}/>
+//         </React.StrictMode>
+//     );
+// }

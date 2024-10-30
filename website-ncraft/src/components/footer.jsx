@@ -24,10 +24,10 @@ export const Footer = () => {
                                     <a href="/" className="hover:underline">Hogar</a>
                                 </li>
                                 <li className="mb-4 footer-link">
-                                    <a href="/" className="hover:underline">Nosotros</a>
+                                    <a href="/soon" className="hover:underline">Nosotros</a>
                                 </li>
                                 <li className="mb-4 footer-link">
-                                    <a href="/" className="hover:underline">Soporte</a>
+                                    <a href="/soon" className="hover:underline">Soporte</a>
                                 </li>
                             </ul>
                         </div>
