@@ -18,7 +18,8 @@ module.exports = {
       color4:'#1B1B28',
       color5:'#0F0F15',
       color6:'#0A0A0A',
-      color7:'#5765F2'
+      color7:'#5765F2',
+      color8:'#ffffff'
     }
   }
 };
