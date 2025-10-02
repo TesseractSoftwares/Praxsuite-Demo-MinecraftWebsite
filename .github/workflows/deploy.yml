@@ -36,5 +36,5 @@ jobs:
       - name: Build & Push (master tag only)
         run: |
           IMAGE=$LOGIN_SERVER/$IMAGE_NAME:master
-          docker build -t $IMAGE -f website-ncraft/Dockerfile minecraftserverweb
+          docker build -t $IMAGE -f website-ncraft/Dockerfile website-ncraft
           docker push $IMAGE
