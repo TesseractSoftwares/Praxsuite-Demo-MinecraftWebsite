@@ -24,19 +24,21 @@ export const CarouselComponent = () => {
     ];
   
     return (
-      <Carousel className='w-carousel'>
-        {slides.map((slide, index) => (
-            <div key={index} className="flex flex-col items-center justify-center h-96 bg-gray-200 relative">
-                <img src={slide.imageUrl} alt={slide.title} className="w-full h-96 object-cover" />
-                <div className="flex flex-col items-center justify-center h-96 absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-color5 to-transparent">
-                    <h2 className="text-3xl font-bold text-white">{slide.title}</h2>
-                    <p className="mt-2 text-center text-white">{slide.description}</p>
-                    <a href='/' className="btn-gradient mt-6 px-5 py-2 text-white rounded-sm">
-                        {slide.buttonLabel}
-                    </a>
+      <Carousel className='w-carousel autoShow rounded-xl'>
+        {
+            slides.map((slide, index) => (
+                <div key={index} className="flex flex-col items-center justify-center h-[32rem] relative">
+                    <img src={slide.imageUrl} alt={slide.title} className="w-full h-full object-cover" />
+                    <div className="flex flex-col items-center justify-center h-full absolute left-0 right-0 p-4 bg-gradient-to-t from-color5 to-transparent">
+                        <h2 className="text-4xl font-bold text-white">{slide.title}</h2>
+                        <p className="mt-2 text-center text-white">{slide.description}</p>
+                        <a href='/' className="btn-gradient hover:scale-[109%] transition hover:transition mt-6 px-8 py-4 text-white rounded-sm">
+                            {slide.buttonLabel}
+                        </a>
+                    </div>
                 </div>
-            </div>
-        ))}
+            ))
+        }
       </Carousel>
     );
 };

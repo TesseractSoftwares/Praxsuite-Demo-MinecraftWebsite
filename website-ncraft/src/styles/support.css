@@ -1,6 +1,9 @@
 .header-support {
-    background: linear-gradient(to right, #0F0F15 15%, #001E41, #004DA8, #0074E1);
+    background: linear-gradient(to right, #0A0A0A 15%, #001E41, #004ca800, #0074e100), url(../img/1920x1080.png);
+    /* background: linear-gradient(to right, #0F0F15 15%, #001E41, #004DA8, #0074E1); */
     height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
 
 .h-100vh {
